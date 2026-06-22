@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor de Videos Estilo YouTube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ui-corner {
+            border-radius: 0.9rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white p-6">
+
+    <div id="pagina-original" class="space-y-6">
+        
+        <div class="flex items-center justify-between bg-gray-800 p-4 rounded-xl shadow-lg gap-4">
+            <div class="flex items-center gap-4 flex-1">
+                <div class="relative w-12 h-12 rounded-full p-[3px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                    <img src="C:\Users\GAEL0\OneDrive\Imágenes\hola5.arre.png" alt="Canal" class="w-full h-full object-cover rounded-full bg-gray-800">
+                </div>
+                
+                <div class="relative w-48 h-28 overflow-hidden ui-corner bg-black cursor-pointer shadow-md border border-gray-700" onclick="expandirVideo('video', 'C:\\Users\\GAEL0\\Videos\\Grabación 2026-05-29 045327.mp4')">
+                    <video src="C:\Users\GAEL0\Videos\Grabación 2026-05-29 045327.mp4" class="w-full h-full object-cover" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <span class="absolute bottom-2 right-2 bg-black/80 px-2 py-0.5 text-xs rounded">MP4</span>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg">Mi Grabación Especial</h3>
+                    <p class="text-sm text-gray-400">Video local de Windows</p>
+                </div>
+            </div>
+            <button onclick="irAlCanal()" class="bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-full text-sm transition-colors shrink-0">
+                Ver más en el canal
+            </button>
+        </div>
+
+        <div class="flex items-center justify-between bg-gray-800 p-4 rounded-xl shadow-lg gap-4">
+            <div class="flex items-center gap-4 flex-1">
+                <div class="relative w-12 h-12 rounded-full p-[3px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                    <img src="C:\Users\GAEL0\OneDrive\Imágenes\hola5.arre.png" alt="Canal" class="w-full h-full object-cover rounded-full bg-gray-800">
+                </div>
+                
+                <div class="relative w-48 h-28 overflow-hidden ui-corner bg-black cursor-pointer shadow-md border border-gray-700" onclick="expandirVideo('imagen', 'C:\\Users\\GAEL0\\Videos\\Grabación 2026-06-21 125359.gif')">
+                    <img src="C:\Users\GAEL0\Videos\Grabación 2026-06-21 125359.gif" alt="GIF Animado" class="w-full h-full object-cover">
+                    <span class="absolute bottom-2 right-2 bg-black/80 px-2 py-0.5 text-xs rounded">GIF</span>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg">Grabación en formato GIF</h3>
+                    <p class="text-sm text-gray-400">Loop animado</p>
+                </div>
+            </div>
+            <button onclick="irAlCanal()" class="bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-full text-sm transition-colors shrink-0">
+                Ver más en el canal
+            </button>
+        </div>
+
+        <div class="flex items-center justify-between bg-gray-800 p-4 rounded-xl shadow-lg gap-4">
+            <div class="flex items-center gap-4 flex-1">
+                <div class="relative w-12 h-12 rounded-full p-[3px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                    <img src="C:\Users\GAEL0\OneDrive\Imágenes\hola5.arre.png" alt="Canal" class="w-full h-full object-cover rounded-full bg-gray-800">
+                </div>
+                
+                <div class="relative w-48 h-28 overflow-hidden ui-corner bg-black cursor-pointer shadow-md border border-gray-700" onclick="expandirVideo('video', 'C:\\Users\\GAEL0\\AppData\\Local\\CapCut\\Videos\\0618.mp4')">
+                    <video src="C:\Users\GAEL0\AppData\Local\CapCut\Videos\0618.mp4" class="w-full h-full object-cover" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <span class="absolute bottom-2 right-2 bg-black/80 px-2 py-0.5 text-xs rounded font-medium text-gray-200">9 weeks</span>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg">Video de YouTube (Edición CapCut)</h3>
+                    <p class="text-sm text-gray-400">Hace 9 semanas</p>
+                </div>
+            </div>
+            <button onclick="irAlCanal()" class="bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-full text-sm transition-colors shrink-0">
+                Ver más en el canal
+            </button>
+        </div>
+
+        <div class="flex items-center justify-between bg-gray-800 p-4 rounded-xl shadow-lg gap-4">
+            <div class="flex items-center gap-4 flex-1">
+                <div class="relative w-12 h-12 rounded-full p-[3px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                    <img src="C:\Users\GAEL0\OneDrive\Imágenes\hola5.arre.png" alt="Canal" class="w-full h-full object-cover rounded-full bg-gray-800">
+                </div>
+                
+                <div class="relative w-48 h-28 overflow-hidden ui-corner bg-black cursor-pointer shadow-md border border-gray-700" onclick="expandirVideo('video', 'C:\\Users\\GAEL0\\Videos\\Grabación 2026-06-04 181516.mp4')">
+                    <video src="C:\Users\GAEL0\Videos\Grabación 2026-06-04 181516.mp4" class="w-full h-full object-cover" muted loop onmouseover="this.play()" onmouseout="this.pause()"></video>
+                    <span class="absolute bottom-2 right-2 bg-black/80 px-2 py-0.5 text-xs rounded">MP4</span>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold text-lg">Grabación de Junio</h3>
+                    <p class="text-sm text-gray-400">Video local adicional</p>
+                </div>
+            </div>
+            <button onclick="irAlCanal()" class="bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-full text-sm transition-colors shrink-0">
+                Ver más en el canal
+            </button>
+        </div>
+
+    </div>
+
+    <div id="vista-reproductor" class="hidden max-w-5xl mx-auto">
+        <button onclick="volverAtras()" class="flex items-center gap-2 text-gray-400 hover:text-white mb-4 transition-colors group">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6 transform group-hover:-translate-x-1 transition-transform">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+            </svg>
+            <span class="font-medium">Atrás a la página original</span>
+        </button>
+
+        <div class="bg-black w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
+            <div id="contenedor-media-grande" class="w-full h-full"></div>
+        </div>
+
+        <div class="mt-4 flex items-center gap-4">
+            <div class="relative w-14 h-14 rounded-full p-[3px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                <img src="C:\Users\GAEL0\OneDrive\Imágenes\hola5.arre.png" alt="Canal" class="w-full h-full object-cover rounded-full bg-gray-800">
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold">Visualizando Contenido</h2>
+                <p class="text-gray-400 text-sm">Reproductor de video local</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const paginaOriginal = document.getElementById('pagina-original');
+        const vistaReproductor = document.getElementById('vista-reproductor');
+        const contenedorMedia = document.getElementById('contenedor-media-grande');
+
+        function irAlCanal() {
+            window.open('https://www.youtube.com/@Gael09Salgadog202', '_blank');
+        }
+
+        function expandirVideo(tipo, rutaArchivo) {
+            paginaOriginal.classList.add('hidden');
+            vistaReproductor.classList.remove('hidden');
+
+            if (tipo === 'imagen') {
+                contenedorMedia.innerHTML = `<img src="${rutaArchivo}" class="w-full h-full object-contain" />`;
+            } else {
+                contenedorMedia.innerHTML = `<video src="${rutaArchivo}" class="w-full h-full object-contain" controls autoplay></video>`;
+            }
+        }
+
+        function volverAtras() {
+            contenedorMedia.innerHTML = '';
+            vistaReproductor.classList.add('hidden');
+            paginaOriginal.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
